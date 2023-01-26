@@ -26,10 +26,10 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] != '%')
 		{
-			buffer[buf_inde++] = format[i];
-			if (buf_ind == BUF_SIZE)
+			buffer[buff_inde++] = format[i];
+			if (buff_ind == BUFF_SIZE)
 				print_buffer(buffer, &buff_ind);
-			printed_char++;
+			printed_chars++;
 		}
 		else
 		{
