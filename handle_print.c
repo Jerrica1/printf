@@ -38,7 +38,7 @@ int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
 			--(*ind);
 			while (fmt[*ind] != ' ' && fmt[*ind] != '%')
 				--(*ind);
-			if f(fmt[*ind] == ' ')
+			if (fmt[*ind] == ' ')
 				--(*ind);
 			return (1);
 		}
